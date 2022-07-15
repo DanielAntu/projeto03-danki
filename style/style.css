@@ -35,7 +35,11 @@ header .logo {
     float: left;
     width: 160px;
     height: 40px;
-    background-color: #ccc;
+    background-image: url(../imagens/logo-danki.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
 }
 
 header nav {
@@ -278,6 +282,10 @@ section.sessao1 {
     float: left;
     width: 40px;
     height: 40px;
+    background-image: url(../imagens/actor1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
     top: -4px;
     border-radius: 20px;
@@ -402,6 +410,26 @@ section.sessao4 {
     background-color: white;
     border: 5px solid rgb(200,200,200);
 }
+ .map iframe {
+    width: 100%;
+    height: 100%;
+ }
+
+footer {
+    padding: 40px 2%;
+    background-color: #192123;
+    color: white;
+    font-size: 14px;
+}
+
+footer p:nth-of-type(1) {
+    float: left;
+}
+
+footer p:nth-of-type(2) {
+    float: right;
+}
+
 
 @media screen and (max-width: 830px) {
     .chamada1 {
@@ -424,6 +452,7 @@ section.sessao4 {
         color: white;
         margin-top: 10px;
     }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -537,6 +566,7 @@ section.sessao4 {
         max-width: none;
         position: relative;
     }
+
 }
 
 @media screen and (max-width: 580px) {
@@ -553,5 +583,18 @@ section.sessao4 {
     .sessao2 img {
         top: 16px;
         margin-top: 20px;
+    }
+
+    footer {
+        text-align: center;
+    }
+    
+    footer p:nth-of-type(1) {
+        float: none;
+    }
+    
+    footer p:nth-of-type(2) {
+        float: none;
+        margin-top: 8px;
     }
 }
